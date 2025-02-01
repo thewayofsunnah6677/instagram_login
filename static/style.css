@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007ace;
+}
+
+/* Adding space below the button */
+.forgot-container {
+    margin-top: 15px;
+}
+
+.forgot {
+    display: block;
+    text-decoration: none;
+    color: #00376b;
+    font-size: 14px;
+}
+
+/* Logo styling */
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.signup-box {
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    background: white;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.app-download {
+    text-align: center;
+}
+
+.store-buttons img {
+    width: 135px;  /* Set equal width */
+    height: 45px;  /* Set equal height */
+    margin: 5px;
+    object-fit: contain;  /* Ensures images scale properly */
+    display: inline-block;
+    border-radius: 8px;  /* Makes corners slightly rounded */
+}
+
+
+
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    margin-top: 50px; /* Increased margin to move it lower */
+    padding-bottom: 20px; /* Extra spacing from bottom */
+}

